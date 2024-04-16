@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: stripe-integration
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/stripe_integration
+    username: root
+    password: 123
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+stripe:
+  apiKey: sk_test_51P65e4SGmwg5xfRfx1o3MHAzaSb3vdkme0lM74CowUSOit9QZYD16PQRpfcTkJ1hTg27kOc9MhRtAcm4Wm53HQMt00ywTBpgC1
